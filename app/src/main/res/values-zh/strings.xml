@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 格致微芯测试程序 -->
+    <string name="app_name">AndroidPrintSDK</string>
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描设备中...</string>
+    <string name="select_device">请选择要连接的设备</string>
+    <string name="none_paired">没有匹配的设备</string>
+    <string name="has_paired">已配对</string>
+    <string name="not_paired">未配对</string>
+    <string name="rePaire_connect">重新配对并连接</string>
+    <string name="unpair">取消配对</string>
+    <string name="paire_connect">配对并连接</string>
+    <string name="connect_paired">连接</string>
+    <string name="select_options">选择操作</string>
+    <string name="none_found">没有找到设备</string>
+    <string name="no_bounded_device">未找到名称以 %s 开头的设备</string>
+    <string name="title_paired_devices">已配对的设备</string>
+    <string name="title_other_devices">其它可用设备</string>
+
+
+    <!-- Options Menu -->
+    <string name="connect">打开连接</string>
+    <string name="disconnect">断开连接</string>
+
+
+
+    <!-- connect -->
+    <string name="no_conn_address">地址：未连接</string>
+    <string name="no_conn_name">名称：未连接</string>
+    <string name="str_address">地址：</string>
+    <string name="str_name">名称：</string>
+    <string name="str_wifi_now">当前连接的wifi是：</string>
+    <string name="str_wifi_no">尚未连接到任何wifi网络</string>
+    <string name="conn_failed">连接失败</string>
+    <string name="conn_closed">连接关闭</string>
+    <string name="conn_no">没有可连接的设备</string>
+
+
+
+    <string name="bt_not_enabled">蓝牙没有启动</string>
+    <string name="bt_has_on">蓝牙已打开</string>
+    <string name="bt_has_off">蓝牙已关闭</string>
+    <string name="bt_print_success">打印成功</string>
+    <string name="bt_print_failed">打印失败</string>
+    <string name="bt_connecting">正在连接..</string>
+    <string name="bt_connect_success">连接成功..</string>
+    <string name="bt_connect_failed">连接失败</string>
+    <string name="bt_connect_closed">连接已关闭</string>
+    <string name="title_connecting">正在连接...</string>
+    <string name="title_connected">已连接</string>
+    <string name="title_not_connected">未连接</string>
+
+    <string name="main_text">文本</string>
+    <string name="main_photo">图片</string>
+    <string name="main_qr_code">二维码</string>
+    <string name="main_barcode">条形码</string>
+    <string name="main_curve">曲线</string>
+    <string name="main_mega_data">大数据</string>
+    <string name="main_reset">恢复出厂</string>
+    <string name="main_cashbox">钱箱</string>
+    <string name="main_cutter">切刀</string>
+    <string name="main_black_mark">黑标</string>
+    <string name="main_demopage">自检页</string>
+    <string name="main_update">软件更新</string>
+    <string name="main_language">语言/编码</string>
+    <string name="main_router">路由器</string>
+    <string name="main_state">状态返回 10 04 04</string>
+    <string name="main_status">状态返回 GS a n</string>
+    <string name="main_bluetooth">蓝牙</string>
+
+
+    <string name="spinner_pixel_width">像素点宽:</string>
+    <string name="spinner_cell_size">单元大小:</string>
+    <string name="spinner_error_correction_level">纠错等级:</string>
+
+
+    <string name="gotoSettings">设置</string>
+    <string name="password">请输入密码：</string>
+    <string name="cancel">取消</string>
+
+    <string name="button_send">发送</string>
+    <string name="button_print">打印</string>
+    <string name="button_default_text_test">默认文字测试</string>
+    <string name="button_start_distribution">开始配网</string>
+    <string name="button_open_dhcp">打开DHCP</string>
+    <string name="button_close_dhcp">关闭DHCP</string>
+    <string name="button_scan">扫描新设备</string>
+    <string name="button_back">返回</string>
+    <string name="button_setup">设置</string>
+    <string name="button_unicode_out">退出unicode</string>
+
+    <string name="textview_name">名称:</string>
+    <string name="textview_password">密码:</string>
+
+    <string name="dialog_tip">提示：</string>
+    <string name="dialog_connlast">是否连接到上次设备？</string>
+    <string name="dialog_conn">确认连接</string>
+    <string name="dialog_resel">重新搜索</string>
+    <string name="dialog_content_black">是否开启黑标</string>
+    <string name="dialog_open">开启</string>
+    <string name="dialog_close">关闭</string>
+    <string name="dialog_permission">应用授予权限</string>
+    <string name="dialog_content_upadte">请确认打印机版本是否支持</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_print">正在打印, 请稍后...</string>
+    <string name="dialog_update">正在升级, 请稍后...</string>
+    <string name="dialog_choose">选择</string>
+    <string name="dialog_default">默认</string>
+
+
+    <string name="toast_upadte_finish">数据已发送, 请等待开机升级完成</string>
+    <string name="toast_failed">连接失败</string>
+    <string name="toast_close">连接关闭</string>
+    <string name="toast_no">没有可连接的设备</string>
+    <string name="toast_upadte_failed">获取升级文件失败</string>
+    <string name="toast_upadte_error">升级文件错误</string>
+    <string name="toast_photo_size">请选择打印图片的尺寸</string>
+    <string name="toast_open_permission">选择文件需要开启权限，请在应用设置开启权限。</string>
+
+    <string name="radiobutton_hex">16进制</string>
+    <string name="radiobutton_paper_out">缺纸</string>
+    <string name="radiobutton_overheating">过热</string>
+    <string name="radiobutton_overvoltage">过压</string>
+    <string name="radiobutton_abroach">开盖</string>
+    <string name="radiobutton_cutter">切刀</string>
+
+    <string name="text_test">测试</string>
+    <string name="text_setup">设置</string>
+    <string name="text_distribution_network">配网</string>
+    <string name="text_state">状态</string>
+    <string name="text_language">语言设置</string>
+    <string name="text_code">编码设置</string>
+
+
+    <string name="print">打印</string>
+    <string name="str_show">演示：</string>
+    <string name="str_image">打印图片效果展示：</string>
+    <string name="str_text">打印文本效果展示：</string>
+    <string name="str_text_left">文字居左效果演示abc123：</string>
+    <string name="str_text_right">文字居右效果演示abc123：</string>
+    <string name="str_text_center">文字居中效果演示abc123：</string>
+    <string name="str_text_strong">文字加粗效果演示abc123：</string>
+    <string name="str_text_underline">文字下划线效果演示abc123：</string>
+    <string name="str_text_height">同行不同高效果演示：：</string>
+    <string name="str_text_overstriking">文字加粗演示</string>
+    <string name="str_text_heigth_show">文字加粗倍高演示</string>
+    <string name="str_text_width">文字加粗倍宽演示</string>
+    <string name="str_text_heigth_width">文字加粗倍高倍宽演示</string>
+    <string name="str_text_underline_show">文字下划线演示</string>
+    <string name="times">倍</string>
+    <string name="bigger">放大</string>
+    <string name="bigger1">倍效果演示abc123</string>
+
+
+
+</resources>

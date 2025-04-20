@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:autoText="false"
+                android:background="#B5B0B0"
+                android:gravity="center"
+                android:text="@string/textview_name"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/routerName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="true"
+                android:inputType="text"
+                android:text="null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#BDB8B8"
+                android:gravity="center"
+                android:text="@string/textview_password"
+                android:textColorHighlight="#A6A3A3"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/routerPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/setRouter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/button_start_distribution" />
+
+            <Button
+                android:id="@+id/dhcp_on"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/button_open_dhcp"/>
+
+            <Button
+                android:id="@+id/dhcp_off"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/button_close_dhcp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            tools:context="com.android.print.demo.MainActivity"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_e"
+                android:textSize="15dp"
+                android:text="设备"/>
+
+            <LinearLayout
+                android:id="@+id/connect_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/teal_200"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/connect_state"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/connect"
+                    android:textColor="#000"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/connect_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_name"
+                        android:textColor="#000"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/connect_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_address"
+                        android:textColor="#000"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_e"
+                    android:textSize="15dp"
+                    android:text="@string/text_test"/>
+
+                <RadioGroup
+                    android:id="@+id/rg1_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_text"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_test_text"
+                        android:layout_weight="1"
+                        android:text="@string/main_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_pictrue"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_test_pictrue"
+                        android:layout_weight="1"
+                        android:text="@string/main_photo" />
+
+                    <RadioButton
+                        android:id="@+id/rb_qr"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_test_qr"
+                        android:layout_weight="1"
+                        android:text="@string/main_qr_code" />
+
+                    <RadioButton
+                        android:id="@+id/rb_bar"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_test_bar"
+                        android:layout_weight="1"
+                        android:text="@string/main_barcode" />
+
+                    <RadioButton
+                        android:id="@+id/rb_curve"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_test_curve"
+                        android:layout_weight="1"
+                        android:text="@string/main_curve" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg2_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_bt"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_test_data"
+                        android:layout_weight="1"
+                        android:text="@string/main_mega_data" />
+
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_e"
+                    android:textSize="15dp"
+                    android:text="@string/text_setup"/>
+
+                <RadioGroup
+                    android:id="@+id/rg1_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_set"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_set"
+                        android:layout_weight="1"
+                        android:text="@string/main_reset" />
+
+                    <RadioButton
+                        android:id="@+id/rb_box"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_box"
+                        android:layout_weight="1"
+                        android:text="@string/main_cashbox" />
+
+                    <RadioButton
+                        android:id="@+id/rb_cut"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_cut"
+                        android:layout_weight="1"
+                        android:text="@string/main_cutter" />
+
+                    <RadioButton
+                        android:id="@+id/rb_black"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_black"
+                        android:layout_weight="1"
+                        android:text="@string/main_black_mark" />
+
+                    <RadioButton
+                        android:id="@+id/rb_self_test"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_self_test"
+                        android:layout_weight="1"
+                        android:text="@string/main_demopage" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg2_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_update"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_update"
+                        android:text="@string/main_update" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_language"
+                        android:text="@string/main_language" />
+
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_e"
+                    android:textSize="15dp"
+                    android:text="@string/text_distribution_network"/>
+
+                <RadioGroup
+                    android:id="@+id/rg3_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_router"
+                        style="@style/tab_test_item"
+                        android:drawableTop="@drawable/tab_set_router"
+                        android:text="@string/main_router" />
+
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        style="@style/tab_test_item"
+                        android:layout_weight="1"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_e"
+                    android:textSize="15dp"
+                    android:text="@string/text_state"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/v_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/get_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/main_state"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/rg_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/printer_paper"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/radiobutton_paper_out"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:layout_weight="1"/>
+
+                            <RadioButton
+                                android:id="@+id/printer_hot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/radiobutton_overheating"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:layout_weight="1"/>
+
+                            <RadioButton
+                                android:id="@+id/printer_press"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/radiobutton_overvoltage"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:layout_weight="1"/>
+                            <RadioButton
+                                android:id="@+id/printer_open"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/radiobutton_abroach"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:layout_weight="1"/>
+                            <RadioButton
+                                android:id="@+id/printer_cut"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/radiobutton_cutter"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:layout_weight="1"/>
+
+                        </RadioGroup>
+
+                        <Button
+                            android:id="@+id/printer_check"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/main_status"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabSelectedTextColor="@color/teal_200"
+                    android:layout_gravity="bottom">
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/main_bluetooth" />
+
+    <!--                <android.support.design.widget.TabItem-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="WIFI" />-->
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="USB" />
+
+                    <!--            <android.support.design.widget.TabItem-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:text="UART" />-->
+                </android.support.design.widget.TabLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff">
+
+            <EditText
+                android:id="@+id/textData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|text"
+                android:layout_gravity="top" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/main_text"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rb_hex"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/radiobutton_hex" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/textSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send" />
+
+        <Button
+            android:id="@+id/sendDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_default_text_test" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

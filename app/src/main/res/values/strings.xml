@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gezhi microchip test program -->
+    <string name="app_name">AndroidPrintSDK</string>
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning...</string>
+    <string name="select_device">Choose Device</string>
+    <string name="none_paired">No matching device</string>
+    <string name="has_paired">Already Paired</string>
+    <string name="not_paired">Unpaired</string>
+    <string name="rePaire_connect">Repair and connect</string>
+    <string name="unpair">Cancel Pair</string>
+    <string name="paire_connect">Pair and join</string>
+    <string name="connect_paired">connect</string>
+    <string name="select_options">Choose Operation</string>
+    <string name="none_found">Device not found</string>
+    <string name="no_bounded_device">No device whose name starts with %s was found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other available equipment</string>
+
+
+    <!-- Options Menu -->
+    <string name="connect">Disconnect</string>
+    <string name="disconnect">Connect</string>
+
+
+
+    <!-- connect -->
+    <string name="no_conn_address">Address: Disconnect</string>
+    <string name="no_conn_name">Name: Disconnect</string>
+    <string name="str_address">Address：</string>
+    <string name="str_name">Name: </string>
+    <string name="str_wifi_now">Currently connected wifi is:</string>
+    <string name="str_wifi_no">Not yet connected to any wifi network</string>
+    <string name="conn_failed"> Connection Fail</string>
+    <string name="conn_closed">Connection Closed</string>
+    <string name="conn_no">There are no connected devices</string>
+
+
+
+    <string name="bt_not_enabled">Bluetooth not activated</string>
+    <string name="bt_has_on">Bluetooth turned on</string>
+    <string name="bt_has_off">Bluetooth turned off</string>
+    <string name="bt_print_success">Success</string>
+    <string name="bt_print_failed">Failed</string>
+    <string name="bt_connecting">Connecting...</string>
+    <string name="bt_connect_success">Success...</string>
+    <string name="bt_connect_failed">Failed</string>
+    <string name="bt_connect_closed">Closed</string>
+    <string name="title_connecting">Connecting...</string>
+    <string name="title_connected">Connected</string>
+    <string name="title_not_connected">DisConnect</string>
+
+    <string name="main_text">Text</string>
+    <string name="main_photo">Photo</string>
+    <string name="main_qr_code">QR</string>
+    <string name="main_barcode">Barcode</string>
+    <string name="main_curve">Curve</string>
+    <string name="main_mega_data">Mega Data</string>
+    <string name="main_reset">Reset</string>
+    <string name="main_cashbox">Cash Box</string>
+    <string name="main_cutter">Cutter</string>
+    <string name="main_black_mark">Black Mark</string>
+    <string name="main_demopage">Demo Page</string>
+    <string name="main_update">Update</string>
+    <string name="main_language">Language</string>
+    <string name="main_router">Router</string>
+    <string name="main_state">State 10 04 04</string>
+    <string name="main_status">State GS a n</string>
+    <string name="main_bluetooth">BlueTooth</string>
+
+
+    <string name="spinner_pixel_width">Pixel Width:</string>
+    <string name="spinner_cell_size">Cell Size:</string>
+    <string name="spinner_error_correction_level">Error Correction Level:</string>
+
+
+    <string name="gotoSettings">Setup</string>
+    <string name="password">Password：</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="button_send">Send</string>
+    <string name="button_print">Printing</string>
+    <string name="button_default_text_test">Default Text</string>
+    <string name="button_start_distribution">Setup</string>
+    <string name="button_open_dhcp">Open DHCP</string>
+    <string name="button_close_dhcp">Close DHCP</string>
+    <string name="button_scan">Scan Devices</string>
+    <string name="button_back">Back</string>
+    <string name="button_setup">Setup</string>
+    <string name="button_unicode_out">Unicode out</string>
+
+    <string name="textview_name">name:</string>
+    <string name="textview_password">password:</string>
+
+    <string name="dialog_tip">Tips：</string>
+    <string name="dialog_connlast">Is it connected to the last device?</string>
+    <string name="dialog_conn">Confirm</string>
+    <string name="dialog_resel">Search</string>
+    <string name="dialog_content_black">Whether to enable a black label</string>
+    <string name="dialog_open">Enable</string>
+    <string name="dialog_close">Disable</string>
+    <string name="dialog_permission">Application grant permission</string>
+    <string name="dialog_content_upadte">Please check whether the printer version supports it</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_print">Printing, please wait...</string>
+    <string name="dialog_update">Upgrading, please wait...</string>
+    <string name="dialog_choose">Choose</string>
+    <string name="dialog_default">Default</string>
+
+
+    <string name="toast_upadte_finish">The data has been sent. Please wait until the upgrade is completed</string>
+    <string name="toast_failed">Failed</string>
+    <string name="toast_close">Closed</string>
+    <string name="toast_no">There are no connected devices</string>
+    <string name="toast_upadte_failed">Failed to obtain the upgrade file</string>
+    <string name="toast_upadte_error">Upgrade file error</string>
+    <string name="toast_photo_size">Please select the size of the print picture</string>
+    <string name="toast_open_permission">You need to enable permissions for selected files. Set permissions in the application.</string>
+
+    <string name="radiobutton_hex">Hex</string>
+    <string name="radiobutton_paper_out">Paper Out</string>
+    <string name="radiobutton_overheating">Overheating</string>
+    <string name="radiobutton_overvoltage">Overvoltage</string>
+    <string name="radiobutton_abroach">Abroach</string>
+    <string name="radiobutton_cutter">Cutter</string>
+
+    <string name="text_test">Test</string>
+    <string name="text_setup">Setup</string>
+    <string name="text_distribution_network">Network</string>
+    <string name="text_state">State</string>
+    <string name="text_language">Language</string>
+    <string name="text_code">Code</string>
+
+
+    <string name="print">Print</string>
+    <string name="str_show">Demonstrate：</string>
+    <string name="str_image">Print picture effect display：</string>
+    <string name="str_text">Print text effect display：</string>
+    <string name="str_text_left">Text left effect demonstrates abc123：</string>
+    <string name="str_text_right">Text right effect demonstration abc123：</string>
+    <string name="str_text_center">Text center effect demonstration abc123：</string>
+    <string name="str_text_strong">Text bold effect demonstration abc123：</string>
+    <string name="str_text_underline">Text underline effect demonstrates abc123：</string>
+    <string name="str_text_height">Peer different high effect demonstration：</string>
+    <string name="str_text_overstriking">Text bold presentation</string>
+    <string name="str_text_heigth_show">Text bold double height presentation</string>
+    <string name="str_text_width">Text bold double width demonstration</string>
+    <string name="str_text_heigth_width">Text bold times high times wide demonstration</string>
+    <string name="str_text_underline_show">Text underline presentation</string>
+    <string name="times">times</string>
+    <string name="bigger">Enlarge</string>
+    <string name="bigger1">Double effect demonstration abc123</string>
+</resources>
